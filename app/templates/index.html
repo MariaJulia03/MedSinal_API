@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedSinal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="{{ url_for('static', filename='img/Ativo_1@4x.png') }}">
+        </section>
+        <section class="cabecalho__nav">
+            <nav>
+                <ul>
+                    <li><a class="cabecalho__nav__link" href="#home">HOME</a></li>
+                    <li><a class="cabecalho__nav__link" href="#sobreNós">SOBRE NÓS</a></li>
+                    <li><a class="cabecalho__nav__link" href="#ong">SAÚDE</a></li>
+                    <li><a class="cabecalho__nav__link" href="#ong">CLÍNICAS</a></li>
+                    <li><a class="cabecalho__nav__link__login" href="#login">ENTRAR</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="backgroud__home">
+            <img src="{{ url_for('static', filename='img/ms_homepage.png') }}">
+        </section>
+
+        <section class="carousel-container">
+            <!-- Botão Anterior -->
+            <button class="carousel-arrow left-arrow" id="prevBtn">&#10094;</button>
+        
+            <div class="carousel" id="carousel">
+                <div class="carousel-item">
+                    <div class="secao__imagem__carts">
+                        <img src="{{ url_for('static', filename='img/icone-saude-conectada.png') }}" alt="Card 1">
+                    </div>      
+                    <h3>Biblioteca digital de ISTs e saúde sexual</h3>
+                </div>
+                <div class="carousel-item">
+                    <div class="secao__imagem__carts">
+                        <img src="{{ url_for('static', filename='img/icone-assistente-virtual.png') }}" alt="Card 2">
+                    </div>   
+                    <h3>Sua assistente virtual em saúde</h3>
+                </div>
+                <div class="carousel-item">
+                    <div class="secao__imagem__carts">
+                        <img src="{{ url_for('static', filename='img/icone_busca-saude.png') }}" alt="Card 3">
+                    </div>    
+                    <h3>Localizador de serviços de saúde</h3>
+                </div>
+                <div class="carousel-item">
+                    <div class="secao__imagem__carts">
+                        <img src="{{ url_for('static', filename='img/icone-saude-em-dia.png') }}" alt="Card 4">
+                    </div>    
+                    <h3>Sistema de lembretes de testes e vacinas</h3>
+                </div>
+                <div class="carousel-item">
+                    <div class="secao__imagem__carts">
+                        <img src="{{ url_for('static', filename='img/icone-educa-saude.png') }}" alt="Card 5">
+                    </div>    
+                    <h3>Espaço educacional multimídia</h3>
+                </div>
+                <div class="carousel-item">
+                    <div class="secao__imagem__carts">
+                        <img src="{{ url_for('static', filename='img/icone-jogos.png') }}" alt="Card 5">
+                    </div>
+                    <h3>Plataforma de Gamificação</h3>
+                </div>
+            </div>
+        
+            <!-- Botão Próximo -->
+            <button class="carousel-arrow right-arrow" id="nextBtn">&#10095;</button>
+        </section>
+        
+
+        <section class="sobre__nos">
+            <div class="sobre__nos__conteudo">
+                <div class="sobre__nos__imagem">
+                    <img src="{{ url_for('static', filename='img/imagem-sobre-nos.jpg') }}">
+                </div>
+                <div class="sobre__nos__texto">
+                    <h1>Sobre nós</h2>
+                    <p> Nascemos com a missão de transformar a forma como as pessoas encaram a saúde sexual no Brasil. Em um mundo cada vez mais conectado, a desinformação e o estigma sobre Infecções Sexualmente Transmissíveis (ISTs) ainda são desafios significativos. Diante desse cenário, nossa plataforma surge como um oásis de informação confiável, acessível e humanizada.</p>
+
+                    <p>Acreditamos que a educação é a chave para prevenir doenças e promover o bem-estar. Por isso, oferecemos um conteúdo rico e abrangente, elaborado por especialistas em saúde sexual, que aborda desde os conceitos básicos sobre ISTs até os métodos mais eficazes de prevenção. Nosso objetivo é descomplicar a linguagem médica e tornar o conhecimento sobre o assunto acessível a todos.</p>
+                        
+                </div>
+            </div>
+        </section>
+        <section class="vem__testar">
+            <div class="vem__testar__conteudo">
+                <div class="secao__esquerda">
+                    <div class="secao__esquerda__imagem">
+                        <img src="{{ url_for('static', filename='img/Ativo_1@4x.png') }}">
+                    </div>
+                    <div class="secao__esquerta__texto">
+                        <p class="font1">Centros de </p>
+                        <p class="font2">testagem</p> 
+                        <div class="secao__botao">
+                            <a class="botao__vem__testar" href="#">Saiba mais +</a>
+                           </div> 
+                    </div>
+
+                </div>
+
+                <div class="secao__direita">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d25839.198666182627!2d-34.909010135739514!3d-8.05162970103593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sclinicas%20de%20testagem%20%20ISts%20recife!5e0!3m2!1spt-BR!2sbr!4v1729026072529!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+
+        <img src="{{ url_for('static', filename='img/Ativo_1@4x.png') }}" alt="#">
+        <div class="footer__footer">
+            <p></p>
+        </div>
+    </footer>
+</body>
+</html>
